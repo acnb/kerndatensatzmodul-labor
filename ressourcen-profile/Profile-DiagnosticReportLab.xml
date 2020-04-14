@@ -10,7 +10,7 @@
   <description value="Dieses Profil beschreibt einen Laborbefund in der Medizininformatik-Initiative." />
   <purpose value="Dieses Profil beschreibt einen Laborbefund in der Medizininformatik-Initiative." />
   <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
@@ -18,22 +18,52 @@
   <derivation value="constraint" />
   <differential>
     <element id="DiagnosticReport.id">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.id" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.meta">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.meta" />
       <mustSupport value="false" />
     </element>
     <element id="DiagnosticReport.meta.source">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.meta.source" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.meta.profile">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.meta.profile" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier" />
       <slicing>
         <discriminator>
@@ -46,12 +76,24 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier" />
       <sliceName value="befund" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.type" />
       <min value="1" />
       <patternCodeableConcept>
@@ -63,6 +105,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.type.coding" />
       <slicing>
         <discriminator>
@@ -75,6 +123,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.type.coding" />
       <sliceName value="fillerV2" />
       <min value="1" />
@@ -82,28 +136,58 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.type.coding.system" />
       <min value="1" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.type.coding:fillerV2.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.type.coding.code" />
       <min value="1" />
       <fixedCode value="FILL" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.identifier:befund.assigner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.identifier.assigner" />
       <min value="1" />
       <type>
@@ -113,6 +197,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.basedOn" />
       <min value="1" />
       <type>
@@ -123,16 +213,34 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding" />
       <slicing>
         <discriminator>
@@ -145,6 +253,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="loinc-lab" />
       <min value="1" />
@@ -152,18 +266,36 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding.system" />
       <min value="1" />
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc-lab.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding.code" />
       <min value="1" />
       <fixedCode value="26436-6" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="diagnostic-service-sections" />
       <min value="1" />
@@ -171,22 +303,46 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding.system" />
       <min value="1" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0074" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.category.coding.code" />
       <min value="1" />
       <fixedCode value="LAB" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.code" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.code.coding" />
       <slicing>
         <discriminator>
@@ -199,6 +355,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.code.coding" />
       <sliceName value="loinc-labReport" />
       <min value="1" />
@@ -206,18 +368,36 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://loinc.org" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc-labReport.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.code.coding.code" />
       <min value="1" />
       <fixedCode value="11502-2" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.subject" />
       <min value="1" />
       <max value="1" />
@@ -229,6 +409,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.encounter">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.encounter" />
       <type>
         <code value="Reference" />
@@ -237,7 +423,14 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.effective[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.effective[x]" />
+      <short value="Klinisches Bezugsdatum" />
       <definition value="Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können." />
       <min value="1" />
       <type>
@@ -246,35 +439,84 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.issued">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.issued" />
+      <short value="Dokumentationsdatum" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.performer" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.performer.reference" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.performer.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.specimen" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.specimen.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.specimen.reference" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.specimen.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.specimen.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.result" />
       <min value="1" />
       <type>
@@ -285,6 +527,12 @@
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusion">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="DiagnosticReport.conclusion" />
       <mustSupport value="true" />
     </element>
